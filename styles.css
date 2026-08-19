@@ -18147,6 +18147,24 @@ img {
     max-width: 100%
 }
 
+#wvu-main-content > .container > ul > li img.rounded-circle {
+    width: 120px;
+    height: 120px;
+    object-fit: cover
+}
+
+@media (min-width: 992px) {
+    #wvu-main-content > .container > ul > li > .row > .col-12 > .row > .col-lg-3:has(> img.rounded-circle) {
+        flex: 0 0 120px;
+        width: 120px
+    }
+
+    #wvu-main-content > .container > ul > li > .row > .col-12.col-sm-3 > .row > .col-lg-9 {
+        flex: 1 1 0;
+        width: auto
+    }
+}
+
 .wvu-backpage-main h2,.wvu-backpage-main .h2,.wvu-backpage-main h3,.wvu-backpage-main .h3,.wvu-backpage-main h4,.wvu-backpage-main .h4,.wvu-backpage-main h5,.wvu-backpage-main .h5,.wvu-backpage-main h6,.wvu-backpage-main .h6 {
     margin-top: 0
 }
