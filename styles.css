@@ -18962,6 +18962,20 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
     color: rgba(255,255,255,0.5)
 }
 
+.wvu-site-nav__items > li.active > .nav-link {
+    position: relative
+}
+
+.wvu-site-nav__items > li.active > .nav-link::before {
+    background-color: var(--bs-wvu-gold);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
 @media (min-width: 992px) {
     .wvu-site-nav__items svg {
         color:rgba(255,255,255,0.5)
